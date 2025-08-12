@@ -34,5 +34,14 @@
     "passed": true,
     "durationMinutes": 35,
     "skills": { "Product Knowledge": 92, "Compliance": 88, "Communication": 90 }
-  }
+  },
+  {
+  "id": "s100",
+  "date": "2025-08-10",
+  "department": "Sales",
+  "score": 88,
+  "passed": true,
+  "durationMinutes": 42,
+  "skills": { "Product Knowledge": 90, "Compliance": 85, "Communication": 87 }
+}
 ]
