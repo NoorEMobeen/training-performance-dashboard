@@ -1,0 +1,38 @@
+[
+  {
+    "id": "s1",
+    "date": "2025-07-25",
+    "department": "Sales",
+    "score": 82,
+    "passed": true,
+    "durationMinutes": 38,
+    "skills": { "Product Knowledge": 80, "Compliance": 78, "Communication": 86 }
+  },
+  {
+    "id": "s2",
+    "date": "2025-07-26",
+    "department": "Engineering",
+    "score": 74,
+    "passed": true,
+    "durationMinutes": 55,
+    "skills": { "Security": 72, "Compliance": 70, "Tooling": 80 }
+  },
+  {
+    "id": "s3",
+    "date": "2025-07-27",
+    "department": "HR",
+    "score": 65,
+    "passed": false,
+    "durationMinutes": 40,
+    "skills": { "Compliance": 60, "Onboarding": 68, "Policy": 66 }
+  },
+  {
+    "id": "s4",
+    "date": "2025-07-28",
+    "department": "Sales",
+    "score": 91,
+    "passed": true,
+    "durationMinutes": 35,
+    "skills": { "Product Knowledge": 92, "Compliance": 88, "Communication": 90 }
+  }
+]
