@@ -4,9 +4,11 @@ import { useInsights } from '../hooks/useInsights';
 import PerformanceTrendChart from '../components/charts/PerformanceTrendChart';
 import AnomalyPanel from '../components/panels/AnomalyPanel';
 import { fmt1, fmtPct } from '../lib/formatters';
+import SkillsComparisonChart from '../components/charts/SkillsComparisonChart';
+import ScoreDistributionChart from '../components/charts/ScoreDistributionChart';
 
 export default function DashboardPage() {
-  const { data, isLoading, isError, refetch } = useInsights({ range: 'last30days' });
+  const { data, isLoading, isError, refetch } = useInsights({ range: 'last7days' });
 
   const k = data?.kpis;
 
@@ -42,6 +44,12 @@ export default function DashboardPage() {
             <AnomalyPanel items={data?.anomalies} />
           </div>
         </section>
+        {/* Skills + Distribution */}
+        <section className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+          <SkillsComparisonChart data={data?.skillsTop ?? []} />
+          <ScoreDistributionChart data={data?.distribution?.bins ?? []} />
+        </section>
+
       </main>
     </div>
 
